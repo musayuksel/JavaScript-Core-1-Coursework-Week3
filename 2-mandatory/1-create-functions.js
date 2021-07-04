@@ -14,10 +14,9 @@ Write a function that:
 */
 function sortArray(arr) {
   const sortedArr = arr.slice();
-  // return sortedArr.sort();
    sortedArr.sort();
-  console.log(arr,'<-----ORIGINAL ARRAY');
-  console.log(sortedArr.sort(),'<-----SORTED ARRAY');
+  // console.log(arr,'<-----ORIGINAL ARRAY');
+  // console.log(sortedArr.sort(),'<-----SORTED ARRAY');
   return sortedArr;
 }
 
