@@ -14,8 +14,21 @@ You don't have to worry about making this algorithm work fast! The idea is to ge
 "think" like a computer and practice your knowledge of basic JavaScript.
 */
 
-function sortAges(arr) {}
 
+
+//take all numbers from array
+function filteredArrayWithNumber (array){
+  const arrayWithNumber = array.filter(element =>{ return Number(element) === element; });
+  return arrayWithNumber;
+}
+//sorted array
+function sortAges(arr) {
+  const sortedArr = filteredArrayWithNumber(arr);
+ return sortedArr.sort((a,b)=>a-b);
+}
+
+
+////npm test -- --testPathPattern
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 const agesCase1 = [
