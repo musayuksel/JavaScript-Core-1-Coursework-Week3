@@ -7,10 +7,13 @@
 */
 
 const pairsByIndexRaw = [[0, 3], [1, 2], [2, 1], null, [1], false, "whoops"];
-function isArrayWith2Element (element) {
+// function isArrayWith2Element (element) {
+//   return (Array.isArray(element)) && (element.length === 2);
+// }
+// const pairsByIndex = pairsByIndexRaw.filter(isArrayWith2Element); // Complete this statement
+const pairsByIndex = pairsByIndexRaw.filter(element => {
   return (Array.isArray(element)) && (element.length === 2);
-}
-const pairsByIndex = pairsByIndexRaw.filter(isArrayWith2Element); // Complete this statement
+});
 
 const students = ["Islam", "Lesley", "Harun", "Rukmini"];
 const mentors = ["Daniel", "Irina", "Mozafar", "Luke"];
