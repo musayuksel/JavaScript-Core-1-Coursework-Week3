@@ -25,9 +25,7 @@ PasswordValidationResult=  [false, false, false, false, true]
 */
 
 function validatePasswords(passwords) {
-  const newArr =[];
   const PasswordValidationResult = passwords.map((element,index) =>{
-    newArr.push(element);
     return containsLowercaseLetter(element) && containsUppercaseLetter(element) && containsNumber(element) && containsSymbol(element) && (element.length >=5) && (passwords.indexOf(element) === index);
   });
   return PasswordValidationResult;

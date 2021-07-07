@@ -4,7 +4,7 @@
 */
 
 const numbers = [3, 2, 1];
-const sortedNumbers = numbers.sort() ;
+const sortedNumbers = numbers.sort((a,b)=> a-b) ;
 
 /* 
   DO NOT EDIT BELOW THIS LINE

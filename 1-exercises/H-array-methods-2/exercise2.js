@@ -14,7 +14,7 @@ function capitalise(str) {
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
-let name = "daniel";
+const name = "daniel";
 console.log(capitalise(name));
 console.log(capitalise('hello'));
 
