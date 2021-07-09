@@ -27,7 +27,7 @@ function isSumBiggerThan16(array){
   return sum > 16;
 }
 //check last number of array, it has to be even number
-function isFinalNumberOdd (array){
+function isFinalNumberEven (array){
   return array[array.length-1] % 2 === 0;
 }
 
@@ -55,7 +55,7 @@ function putInsideArray (str){
 
 function isCardNumberValid(str){
   const arrayNumbers = putInsideArray(str);
-  return isArray16DigitAndOnlyNumber(arrayNumbers) && isDifferentNumber(arrayNumbers) && isSumBiggerThan16(arrayNumbers) && isFinalNumberOdd(arrayNumbers);
+  return isArray16DigitAndOnlyNumber(arrayNumbers) && isDifferentNumber(arrayNumbers) && isSumBiggerThan16(arrayNumbers) && isFinalNumberEven(arrayNumbers);
 }
 
 ///npm run extra-tests
